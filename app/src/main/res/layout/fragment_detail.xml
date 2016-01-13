@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".HomeActivityFragment">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:weightSum="2"
+        android:padding="20dp"
+        android:background="@color/light_blue">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:text="@string/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1" />
+            <TextView android:id="@+id/year"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow  android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/rated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+            <TextView android:id="@+id/rated"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+        </TableRow>
+
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/released"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+            <TextView android:id="@+id/released"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/season"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+            <TextView android:id="@+id/season"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/episode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+            <TextView android:id="@+id/episode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+        </TableRow>
+        <TableRow android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:text="@string/runtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+            <TextView android:id="@+id/runtime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_weight="1"  />
+        </TableRow>
+    </TableLayout>
+    <Button android:id="@+id/retryBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/retry"/>
+</RelativeLayout>
+
